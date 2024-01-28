@@ -1,0 +1,192 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: black;
+}
+.select-dropdown,
+.select-dropdown * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.select-dropdown {
+  position: relative;
+  background-color: hsl(182, 11%, 60%);
+  border-radius: 4px;
+  width: 150px;
+  border: 2px solid rgb(189, 189, 189);
+}
+.select-dropdown select {
+  font-size: 1rem;
+  font-weight: 525;
+  max-width: 100%;
+  padding: 8px 24px 8px 10px;
+  border: none;
+  background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: hsl(182, 11%, 60%);
+}
+.select-dropdown:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-top: 5px solid #181818;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+option{
+    cursor: pointer;
+}
+nav{
+    padding: 10px 20px;
+    background-color: rgb(44, 57, 57);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+h1{
+    padding: 0px 5px;
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(172, 204, 206);
+    display: inline-block;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+    
+}
+.sub_tital{
+    padding: 0px 5px;
+    color: rgb(126, 150, 151);
+    font-size: 1.2em;
+    display: inline-block;
+}
+#test{
+    color: aliceblue;
+    font-size:3em;
+}
+.main_container{
+    height:650px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_section{
+    width: 500px;
+    margin: 50px;
+    /* height: 400px; */
+    background-color: hsl(180, 13%, 40%);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 2px solid white;
+}
+
+:focus{outline: none;}
+input[type="text"]{
+    font: 15px/24px 'Muli', sans-serif; 
+    color: #252525; 
+    width: 100%; 
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+}
+.col{
+    
+    float: left; 
+    width: 100%; 
+    position: relative;
+    padding: 10px 0 0 0 ;
+}
+.display{
+    border: 0; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    background-color: hsl(182, 11%, 80%);
+}
+.display ~ .focus-border{
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0; 
+    height: 3px; 
+    background-color: hsl(180, 13%, 10%); 
+    transition: 0.4s;
+}
+.display:focus ~ .focus-border{
+    width: 100%; 
+    transition: 0.4s;
+}
+.btn_section{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    height: 45px;
+    padding: 4px 0;
+}
+.enter_btn{
+    color: aliceblue;
+    background-color: hsl(180, 13%, 20%);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid hsl(180, 13%, 1%);
+    font-weight: 525;
+    height: 40px;
+}
+.enter_btn:hover{
+    background-color: hsl(180, 14%, 10%);
+    border: 1px solid hsl(180, 13%, 15%);
+}
+.enter_btn:active{
+    background-color: hsl(180, 15%, 25%);
+}
+.reset_btn{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 550;
+    color: hsl(0, 0%, 86%);
+    border: 1px solid hsl(180, 12%, 72%);
+    background-color: rgba(44, 58, 58, 0.461);
+    height: 40px;
+}
+.reset_btn:hover{
+    border: 1px solid hsl(180, 12%, 72%);
+    background-color: hsl(180, 14%, 10%);
+}
+.reset_btn:active{
+    
+    background-color: hsl(180, 14%, 5%);
+}
+.output_section{
+    width: 100%;
+    float: left;
+}
+textarea{
+    width: 100%;
+    font: 15px 'Muli', sans-serif; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+}
+.hidden_output{
+    display: none;
+}

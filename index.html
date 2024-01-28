@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>Number System Converter</h1>
+        <p class="sub_tital">form <code>binary</code> to <code>hexa</code></p>
+    </nav>
+    <section class="main_container">
+        <main id="main_section">
+            <div>
+                <h2>form</h2>
+                <div class="select-dropdown">
+                    <select name="" id="nums" >
+                        <option value="bin">binary</option>
+                        <option value="oct">octal</option>
+                        <option value="dec">decimal</option>
+                        <option value="hex">hexa-decimal</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="col">
+            <input class="display" type="text" placeholder="Enter Number">
+              <span class="focus-border"></span>
+          </div>
+            
+            <div class="btn_section">
+                <button class="enter_btn" type="submit">Enter</button>
+                <button class="reset_btn" type="reset">Reset</button>
+            </div>
+            <div class="output_section">
+                <div id="bin_set" class="hidden_output">
+                    <h3>to Binary</h3>
+                    <textarea id="" cols="" rows="2" readonly>101101</textarea>
+                </div>
+                <div id="oct_set">
+                    <h3>to Octal</h3>
+                    <textarea id="" cols="" rows="2" readonly></textarea>
+                </div>
+                <div id="dec_set">
+                    <h3>to Decimal</h3>
+                    <textarea id="" cols="" rows="2" readonly></textarea>
+                </div>
+                <div id="hex_set">
+                    <h3>to Hexa-Decimal</h3>
+                    <textarea id="" cols="" rows="2" readonly></textarea>
+                </div>
+            </div>
+        </main>
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
