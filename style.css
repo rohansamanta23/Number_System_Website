@@ -77,6 +77,7 @@ h1{
     font-size:3em;
 }
 .main_container{
+    position: relative;
     height:650px;
     width: auto;
     display: flex;
@@ -86,14 +87,13 @@ h1{
 #main_section{
     width: 500px;
     margin: 50px;
-    /* height: 400px; */
     background-color: hsl(180, 13%, 40%);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-self: space-around;
+    align-self: flex-start;
     border: 2px solid white;
 }
 
@@ -189,4 +189,61 @@ textarea{
 }
 .hidden_output{
     display: none;
+}
+#toastBox{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 20px;
+}
+.toast{
+    position: relative;
+    background-color:hsl(182, 11%, 80%);
+    border-radius:10px;
+    border: 2px solid hsl(0, 44%, 69%);
+    width: 300px;
+    height: 50px;
+    margin: 15px 0;
+    font-weight: 500;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+.warning_svg{
+    margin: 0 10px;
+    fill: rgb(53, 0, 0);
+
+}
+.toast::after{
+    border-radius: 0 0 10px 10px;
+    content: '';
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    width: 98%;
+    height: 5px;
+    background-color: rgb(53, 0, 0);
+    animation: anim 5s linear forwards;
+}
+@keyframes anim {
+    100%{
+        width: 0;
+    }   
+}
+.cencel_btn{
+    margin: 0 10px;
+    position: absolute;
+    right: 2px;
+    fill: black;
+}
+.cencel_btn:hover{
+    fill: rgba(0, 0, 0, 0.7);
+
+}
+.cencel_btn:active{
+    fill: rgb(71, 71, 71);
 }

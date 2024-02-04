@@ -20,10 +20,10 @@
                 <h2>form</h2>
                 <div class="select-dropdown">
                     <select name="" id="nums" >
-                        <option value="bin">binary</option>
-                        <option value="oct">octal</option>
-                        <option value="dec">decimal</option>
-                        <option value="hex">hexa-decimal</option>
+                        <option value="bin" class="num-optains">binary</option>
+                        <option value="oct" class="num-optains">octal</option>
+                        <option value="dec" class="num-optains">decimal</option>
+                        <option value="hex" class="num-optains">hexa-decimal</option>
                     </select>
                 </div>
             </div>
@@ -38,26 +38,28 @@
                 <button class="reset_btn" type="reset">Reset</button>
             </div>
             <div class="output_section">
-                <div id="bin_set" class="hidden_output">
+                <div id="bin_set" class="hidden_output op-set">
                     <h3>to Binary</h3>
                     <textarea id="" cols="" rows="2" readonly>101101</textarea>
                 </div>
-                <div id="oct_set">
+                <div id="oct_set" class="op-set">
                     <h3>to Octal</h3>
                     <textarea id="" cols="" rows="2" readonly></textarea>
                 </div>
-                <div id="dec_set">
+                <div id="dec_set" class="op-set">
                     <h3>to Decimal</h3>
                     <textarea id="" cols="" rows="2" readonly></textarea>
                 </div>
-                <div id="hex_set">
+                <div id="hex_set" class="op-set">
                     <h3>to Hexa-Decimal</h3>
                     <textarea id="" cols="" rows="2" readonly></textarea>
                 </div>
             </div>
         </main>
+        <div id="toastBox">
+        </div>
     </section>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="./script.js"></script>
 </body>
 </html>
