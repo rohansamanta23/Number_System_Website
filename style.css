@@ -216,7 +216,6 @@ textarea{
 .warning_svg{
     margin: 0 10px;
     fill: rgb(53, 0, 0);
-
 }
 .toast::after{
     border-radius: 0 0 10px 10px;
