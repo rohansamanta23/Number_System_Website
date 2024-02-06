@@ -2,25 +2,21 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-}
-body{
+}body{
     background-color: black;
 }
-.select-dropdown,
-.select-dropdown * {
+.select-dropdown,.select-dropdown * {
   margin: 0;
   padding: 0;
   position: relative;
   box-sizing: border-box;
-}
-.select-dropdown {
+}.select-dropdown {
   position: relative;
   background-color: hsl(182, 11%, 60%);
   border-radius: 4px;
   width: 150px;
   border: 2px solid rgb(189, 189, 189);
-}
-.select-dropdown select {
+}.select-dropdown select {
   font-size: 1rem;
   font-weight: 525;
   max-width: 100%;
@@ -30,13 +26,11 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
   appearance: none;
-}
-.select-dropdown select:active, .select-dropdown select:focus {
+}.select-dropdown select:active, .select-dropdown select:focus {
   outline: none;
   box-shadow: none;
   background-color: hsl(182, 11%, 60%);
-}
-.select-dropdown:after {
+}.select-dropdown:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -48,9 +42,7 @@ body{
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
-option{
-    cursor: pointer;
-}
+option{cursor: pointer;}
 nav{
     padding: 10px 20px;
     background-color: rgb(44, 57, 57);
@@ -64,7 +56,6 @@ h1{
     color: rgb(172, 204, 206);
     display: inline-block;
     box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
-    
 }
 .sub_tital{
     padding: 0px 5px;
@@ -96,7 +87,6 @@ h1{
     align-self: flex-start;
     border: 2px solid white;
 }
-
 :focus{outline: none;}
 input[type="text"]{
     font: 15px/24px 'Muli', sans-serif; 
@@ -118,8 +108,7 @@ input[type="text"]{
     border-bottom: 1px solid #ccc;
     overflow: hidden;
     background-color: hsl(182, 11%, 80%);
-}
-.display ~ .focus-border{
+}.display ~ .focus-border{
     position: absolute; 
     bottom: 0; 
     left: 0; 
@@ -127,8 +116,7 @@ input[type="text"]{
     height: 3px; 
     background-color: hsl(180, 13%, 10%); 
     transition: 0.4s;
-}
-.display:focus ~ .focus-border{
+}.display:focus ~ .focus-border{
     width: 100%; 
     transition: 0.4s;
 }
@@ -138,8 +126,7 @@ input[type="text"]{
     align-items: center;
     height: 45px;
     padding: 4px 0;
-}
-.enter_btn{
+}.enter_btn{
     color: aliceblue;
     background-color: hsl(180, 13%, 20%);
     padding: 10px 20px;
@@ -149,15 +136,12 @@ input[type="text"]{
     border: 1px solid hsl(180, 13%, 1%);
     font-weight: 525;
     height: 40px;
-}
-.enter_btn:hover{
+}.enter_btn:hover{
     background-color: hsl(180, 14%, 10%);
     border: 1px solid hsl(180, 13%, 15%);
-}
-.enter_btn:active{
+}.enter_btn:active{
     background-color: hsl(180, 15%, 25%);
-}
-.reset_btn{
+}.reset_btn{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -167,12 +151,10 @@ input[type="text"]{
     border: 1px solid hsl(180, 12%, 72%);
     background-color: rgba(44, 58, 58, 0.461);
     height: 40px;
-}
-.reset_btn:hover{
+}.reset_btn:hover{
     border: 1px solid hsl(180, 12%, 72%);
     background-color: hsl(180, 14%, 10%);
-}
-.reset_btn:active{
+}.reset_btn:active{
     
     background-color: hsl(180, 14%, 5%);
 }
@@ -187,9 +169,7 @@ textarea{
     box-sizing: border-box; 
     letter-spacing: 1px;
 }
-.hidden_output{
-    display: none;
-}
+.hidden_output{display: none;}
 #toastBox{
     position: absolute;
     bottom: 10px;
@@ -199,8 +179,7 @@ textarea{
     align-items: flex-end;
     overflow: hidden;
     padding: 20px;
-}
-.toast{
+}.toast{
     position: relative;
     background-color:hsl(182, 11%, 80%);
     border-radius:10px;
@@ -212,12 +191,10 @@ textarea{
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
-}
-.warning_svg{
+}.warning_svg{
     margin: 0 10px;
     fill: rgb(53, 0, 0);
-}
-.toast::after{
+}.toast::after{
     border-radius: 0 0 10px 10px;
     content: '';
     position: absolute;
@@ -229,20 +206,16 @@ textarea{
     animation: anim 5s linear forwards;
 }
 @keyframes anim {
-    100%{
-        width: 0;
-    }   
+    100%{width: 0;}   
 }
 .cencel_btn{
     margin: 0 10px;
     position: absolute;
     right: 2px;
     fill: black;
-}
-.cencel_btn:hover{
+}.cencel_btn:hover{
     fill: rgba(0, 0, 0, 0.7);
 
-}
-.cencel_btn:active{
+}.cencel_btn:active{
     fill: rgb(71, 71, 71);
 }

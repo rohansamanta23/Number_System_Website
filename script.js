@@ -4,17 +4,22 @@ $("#nums").change(function(){
     $(".op-set").removeClass("hidden_output");
     num = $(this).val();
     $("#" + num + "_set").addClass("hidden_output");
+    $("textarea").html('');
     checkDisplay();
 });
 
 $(".enter_btn").click(function(){
     if(checkDisplay()){
-        converter();
+        randomAns();
+        setTimeout(() => {
+            converter();
+        }, 300);
     }
 });
 
 $(".reset_btn").click(function(){
     display.val('');
+    $("textarea").html('');
     checkDisplay();
 });
 
@@ -95,31 +100,36 @@ function noError(){
 }
 
 function converter(){
-    var ans = display.val();
-    if(num!='bin'){
-        console.log("bin");
-
-        if(num == 'oct'){
-
+    let ans = display.val();
+    var dec;
+    if(num!='dec'){
+        if(num == 'bin'){
+            dec = parseInt(ans,2);
         }
-        if(num == 'dec'){
-
+        if(num == 'oct'){
+            dec = parseInt(ans,8);
         }
         if(num == 'hex'){
-
+            dec = parseInt(ans,16);
         }
+        $("#decop").html(dec);
+    }else{
+        dec = parseInt(ans,10);
+    }
+    
+    if(num!='bin'){
+        let bin = dec.toString(2);
+        $("#binop").html(bin);
     }
     
     if(num!='oct'){
-        console.log("oct");
+        let oct = dec.toString(8);
+        $("#octop").html(oct);
     }
-    
-    if(num!='dec'){
-        console.log("dec");
-    }
-    
+
     if(num!='hex'){
-        console.log("hex");
+        var hex = dec.toString(16);
+        $("#hexop").html(hex);
     }
 }
 
@@ -130,7 +140,8 @@ function randomAns() {
             clearInterval();
             return;
         }
-        document.querySelector(/*XXX*/).textContent = Math.floor(Math.random()*99999999);
+        var randomNumber = Math.floor(Math.random()*99999999);
+        $("textarea").html(randomNumber);
         count++;
     }, 50);
 }
