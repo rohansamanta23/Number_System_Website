@@ -60,7 +60,7 @@ function checkDisplay(){
             check = true;
         }
     }if(num=='hex'){
-        const bin_check = /^[0-7a-fA-F]*$/;
+        const bin_check = /^[0-9A-Fa-f]*$/;
         if(!(bin_check.test(val))){
             showError();
             check = false;
@@ -112,7 +112,7 @@ function showError(){
         removeToast();
     }, 5000);
     function removeToast(){
-        // toast.remove();
+        toast.remove();
     }
 }
 
