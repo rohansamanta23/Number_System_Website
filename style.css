@@ -183,14 +183,16 @@ textarea{
     position: relative;
     background-color:hsl(182, 11%, 80%);
     border-radius:10px;
+    width: 350px;
     border: 2px solid hsl(0, 44%, 69%);
-    width: 300px;
+    width: fit-content;
     height: 50px;
     margin: 15px 0;
     font-weight: 500;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
+    padding: 0 45px 0 0;
 }.warning_svg{
     margin: 0 10px;
     fill: rgb(53, 0, 0);

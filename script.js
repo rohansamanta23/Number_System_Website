@@ -112,7 +112,7 @@ function showError(){
         removeToast();
     }, 5000);
     function removeToast(){
-        toast.remove();
+        // toast.remove();
     }
 }
 
